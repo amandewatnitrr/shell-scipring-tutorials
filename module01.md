@@ -106,7 +106,7 @@ echo "My name is  $name. My age is $age."
 - We have some in-built parameters as well like `$(date)` and `$(time)`.
 - Example:
 
-  ```sh [g1: bash]
+  ```sh
   #test_file.sh
   >>>#!usr/bin/env bash
   >>>name=$1;
@@ -115,11 +115,13 @@ echo "My name is  $name. My age is $age."
   >>>echo "last updated by $name - $_date $_time";
   ```
   
-  ```sh [g2:output]
+  ```sh
   #terminal
   >>> bash test_file.sh Aman
   >>> last updated by Aman - Day, Mon DD, YYYY H:MM:SS AM/PM
   ```
+
+  <iframe src="https://leetcode.com/playground/GKja4qAy/shared" frameBorder="0" width="400" height="300"></iframe>
 
 </strong>
 </p>
