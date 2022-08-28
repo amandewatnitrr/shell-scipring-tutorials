@@ -72,7 +72,7 @@
 - Usually all uppercase, but not mandatory.
 - Example:
 
-```bash
+```sh
 #!usr/bin/env bash
 
 name="Aman"
@@ -91,16 +91,16 @@ echo "My name is  $name. My age is $age."
 - Parameters make it possible to be interactive with the user.
 - Let's understand with an example below:
 
-- ```bash
+- ```sh
     #test_file.sh
-    >>>#!usr/bin/env bash
-    >>>echo "Hello" $1
+    #!usr/bin/env bash
+    echo "Hello" $1
   ```
 
   ```sh
     #output
-    >>>bash test_file.sh Aman
-    >>>Hello Aman
+    bash test_file.sh Aman
+    Hello Aman
   ```
 
 - We have some in-built parameters as well like `$(date)` and `$(time)`.
@@ -108,18 +108,18 @@ echo "My name is  $name. My age is $age."
 
   ```sh
     #test_file.sh
-    >>>#!usr/bin/env bash
-    >>>name=$1
-    >>>_date=$(date)
-    >>>_time=$(time)
-    >>>_pwd=$(pwd)
-    >>>echo "last updated by $name - $_date $_time $_pwd";
+    #!usr/bin/env bash
+    name=$1
+    _date=$(date)
+    _time=$(time)
+    _pwd=$(pwd)
+    echo "last updated by $name - $_date $_time $_pwd"
   ```
   
   ```sh
-    #terminal
-    >>> bash test_file.sh Aman
-    >>> last updated by Aman - Day, Mon DD, YYYY H:MM:SS AM/PM worked on ./file_location/filename.ext
+    #terminal output
+    bash test_file.sh Aman
+    last updated by Aman - Day, Mon DD, YYYY H:MM:SS AM/PM worked on ./file_location/filename.ext
   ```
 
 </strong>
