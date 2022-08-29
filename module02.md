@@ -1,4 +1,4 @@
-# Branching and Loops in Shell Scripting
+# Branching, Conditionals and Loops in Shell Scripting
 
 <p align="justify">
 <strong>
@@ -24,7 +24,7 @@
   - -le: less than or equal to
   - -ge: greater than or equal to
 
-## if-then-fi
+## if-then-else-fi
 
 - ```sh
     if [conditional]
