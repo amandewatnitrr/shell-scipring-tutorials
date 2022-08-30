@@ -164,5 +164,33 @@ for e in $array
 done
 ```
 
+## Environment Variables
+
+- Environment Variables are like our own, except they are defined for us by the system.
+- They allow us to know things about our script's environment.
+- Let's checkout some of them:
+
+```sh
+#!/bin/env bash
+
+echo "PATH: $PATH"
+echo "TERM: $TERM"
+echo "EDITOR: $EDITOR"
+```
+
+- Not all values are used by all systems, it will hold empty string and we can detect it using an if statement.
+- Environent variables are reset as soon as the script execution is over.
+
+### Standard Environment Variables
+
+- HOME - User's home directory
+- PATH - directories which are searched for commands
+- HOSTNAME - hostname of the machine
+- SHELL - Shell that is being used
+- EDITOR - Computer's default editor
+- USER - User of this session
+- TERM - type of command-line terminal being used
+- etc
+
 </strong>
 </p>
