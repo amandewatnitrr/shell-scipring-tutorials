@@ -84,7 +84,7 @@ echo "My name is  $name. My age is $age."
 ### Passing Parameters
 
 - The user can give inputs from user in scripts via parameters.
-- The Scripts recieve parameters, even if it doesn't use them.
+- The Scripts recieve parameters, even if it doesn't use them
 - Bash passes in them via some special symbols.
 - The first parameter, $0 is special in that it is the path and name of the executing script.
 - Generally, we don't use parameters past $9s since the use of curly braces with parameters is only supported in newer versions of Bash Shell.
